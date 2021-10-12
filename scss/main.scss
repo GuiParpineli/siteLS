@@ -2,6 +2,11 @@
 @import 'header.scss';
 @import 'footer.scss';
 
+@mixin center {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%)
+}
 
 .banner{
   background-image: url('../banner.webp');
@@ -56,11 +61,8 @@ main > h1{
  
 }
 
-@media (min-width: 300px) and (max-width: 1020px) {
+@media (min-width: 300px) and (max-width: 720px) {
 
-main{
-  display: block;
-}
 
 .banner{
   background-attachment: scroll;
@@ -69,6 +71,18 @@ main{
 }
 
   .blog{
-    height: 180px;
+    width: 100%;
+    min-height: 100px;
+    max-height: 200px;
+    flex-direction: column;
+    @include center
+  }
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+  .banner{
+    background-attachment: scroll;
+    background-position:center;
+    height: 100%;  
   }
 }
