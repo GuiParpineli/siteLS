@@ -1,0 +1,49 @@
+header{
+  position:sticky;
+  top: 0;
+  background-color: black;
+  color: white;
+  z-index: 99
+}
+
+.logo_header{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo{
+  padding: 10px;
+}
+
+.navbar-itens{
+  background-color: rgb(24, 24, 24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.menulist{
+  padding: 10px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.menulist > a{
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  transition: all 1s;
+}
+
+.menulist:hover{
+  transform: scale(1.2);
+}
+
+.menulist > a:hover{
+  
+  color: #deb94f
+}

@@ -1,0 +1,74 @@
+@import 'reset.scss';
+@import 'header.scss';
+@import 'footer.scss';
+
+
+.banner{
+  background-image: url('/AdobeStock_134283439.jpeg');
+  height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -99;
+}
+
+.principal{
+  color: white;
+  padding: 100px;
+  
+}
+
+
+.blogcontainer{
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+
+}
+
+.title-blog{
+  text-shadow: 2px 2px 2px black;
+  width: 100%;
+  text-align: center
+}
+
+.blog{
+  display:flex;
+  height: 300px;
+  border-radius: 10px;
+  width: calc(33% - 10px);
+  background-color: white
+}
+
+main > p{
+
+  color: white;
+  text-align: center;
+  padding: 20px 100px;
+  text-shadow: 2px 2px 2px black;
+}
+
+main > h1{
+  color :white;
+  text-align: center;
+ 
+}
+
+@media (min-width: 300px) and (max-width: 1020px) {
+
+main{
+  display: block;
+}
+
+.banner{
+  background-attachment: scroll;
+  background-position:center;
+  height: 100%;  
+}
+
+  .blog{
+    height: 180px;
+  }
+}
