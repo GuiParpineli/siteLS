@@ -23,6 +23,9 @@ header {
   flex-direction: row;
   gap: 10px; }
 
+#menu_mobile {
+  display: none; }
+
 .menulist {
   padding: 10px;
   text-decoration: none;
@@ -39,3 +42,16 @@ header {
 
 .menulist > a:hover {
   color: #deb94f; }
+
+@media (max-width: 768px) {
+  #menu_mobile {
+    display: block; }
+  .navbar-itens {
+    display: none; }
+  #nav.active .navbar-itens {
+    position: absolute;
+    width: 100%;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px; } }

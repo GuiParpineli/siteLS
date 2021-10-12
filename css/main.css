@@ -29,6 +29,9 @@ header {
   flex-direction: row;
   gap: 10px; }
 
+#menu_mobile {
+  display: none; }
+
 .menulist {
   padding: 10px;
   text-decoration: none;
@@ -45,6 +48,19 @@ header {
 
 .menulist > a:hover {
   color: #deb94f; }
+
+@media (max-width: 768px) {
+  #menu_mobile {
+    display: block; }
+  .navbar-itens {
+    display: none; }
+  #nav.active .navbar-itens {
+    position: absolute;
+    width: 100%;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px; } }
 
 footer {
   position: relative;
@@ -112,18 +128,11 @@ h1 {
   text-align: center;
   text-shadow: 2px 2px 2px black; }
 
-@media (min-width: 300px) and (max-width: 720px) {
-  body {
-    display: flex; }
-  .banner {
-    background-attachment: scroll;
-    background-position: center;
-    height: 100%; }
+@media (max-width: 720px) {
   h1 {
-    font-size: 3.4em;
-    padding: 10px 50px; }
+    font-size: 3em; }
   main > p {
-    font-size: 1.6em;
+    font-size: 1.4em;
     padding: 10px 50px; }
   .blog {
     width: 100%;

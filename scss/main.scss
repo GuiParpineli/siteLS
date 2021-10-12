@@ -12,6 +12,7 @@
   z-index: -99;
 }
 
+
 .principal{
   color: $primary;
   padding: 100px;
@@ -54,38 +55,28 @@ main > p{
   text-shadow: $textshadow;
 }
 
-@media (min-width: 300px) and (max-width: 720px) {
-body {
-  display: flex;
-}
+@media (max-width: 720px) {
+    
+    h1{
+      font-size: 3em;
+    }
+    main > p{
+      font-size: 1.4em;
+      padding: 10px 50px;
+    }
 
-.banner{
-  background-attachment: scroll;
-  background-position:center;
-  height: 100%;
-}
+    .blog{
+      width: 100%;
+      min-height: 100px;
+      max-height: 200px;
+      flex-direction: column;
+      @include center
+    }
 
-h1{
-  font-size: 3.4em;
-  padding: 10px 50px;
-}
-main > p{
-  font-size: 1.6em;
-  padding: 10px 50px;
-}
-
-  .blog{
-    width: 100%;
-    min-height: 100px;
-    max-height: 200px;
-    flex-direction: column;
-    @include center
-  }
-
-  footer{
-    display: flex;
-    width: 100%;
-  }
+    footer{
+      display: flex;
+      width: 100%;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 980px) {
