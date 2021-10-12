@@ -6,6 +6,7 @@ header {
   z-index: 99; }
 
 .logo_header {
+  background-color: black;
   padding: 10px;
   display: flex;
   align-items: center;
