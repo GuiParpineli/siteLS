@@ -18,6 +18,10 @@ header{
   padding: 10px;
 }
 
+
+nav{
+  background-color: rgb(24, 24, 24);
+}
 .navbar-itens{
   background-color: rgb(24, 24, 24);
   display: flex;
@@ -28,8 +32,13 @@ header{
 }
 
 #menu_mobile{
+  border: 5px solid rgb(24, 24, 24);
+  border-radius: 10px;
+  background-color: rgb(24, 24, 24);
+  padding: 5px;
   display: none
 }
+
 
 .menulist{
   padding: 10px;
@@ -66,7 +75,7 @@ header{
    #nav.active .navbar-itens {
     position: absolute;
     width: 100%;
-    top: 20px;
+    top: 30px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
