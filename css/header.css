@@ -60,21 +60,3 @@ nav {
 .menulist>a:hover {
   color: #deb94f;
 }
-
-@media (max-width: 720px) {
-  #menu_mobile {
-    display: block;
-  }
-  .navbar-itens {
-    display: none;
-  }
-
-  #nav.active .navbar-itens {
-    position: absolute;
-    width: 100%;
-    top: 30px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-  }
-}

@@ -3,20 +3,16 @@ footer {
   width: 100vw;
   background-color: black;
   color: white;
-  padding: 20px; }
+  padding: 20px;
+}
 
 .logo-footer {
-  padding: 10px; }
+  padding: 10px;
+}
 
 .itens_footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 60px; }
-
-@media (min-width: 300px) and (max-width: 980px) {
-  .itens_footer {
-    display: block;
-    text-align: center; }
-  .logo-footer {
-    padding: 0; } }
+  gap: 60px;
+}

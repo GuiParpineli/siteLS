@@ -1,71 +1,6 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'PT Serif', serif;
-}
-
-header {
-  position: sticky;
-  top: 0;
-  background-color: black;
-  color: white;
-  z-index: 99;
-}
-
-.logo_header {
-  background-color: black;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo {
-  padding: 10px;
-}
-
-nav {
-  background-color: #181818;
-}
-
-.navbar-itens {
-  background-color: #181818;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 10px;
-}
-
-#menu_mobile {
-  border: 5px solid #181818;
-  border-radius: 10px;
-  background-color: #181818;
-  padding: 5px;
-  display: none;
-}
-
-.menulist {
-  padding: 10px;
-  text-decoration: none;
-  list-style: none;
-}
-
-.menulist>a {
-  color: white;
-  text-decoration: none;
-  list-style: none;
-  transition: all 1s;
-}
-
-.menulist:hover {
-  transform: scale(1.2);
-}
-
-.menulist>a:hover {
-  color: #deb94f;
-}
+@import url('reset.css');
+@import url('footer.css');
+@import url('header.css');
 
 main>p {
   font-size: 1.4rem;
@@ -81,18 +16,6 @@ h1 {
   text-align: center;
   text-shadow: 2px 2px 2px black;
 }
-
-.logo-footer {
-  padding: 10px;
-}
-
-.itens_footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 60px;
-}
-
 
 
 .banner {
@@ -130,13 +53,7 @@ h1 {
   background-color: white;
 }
 
-footer {
-  position: relative;
-  width: 100vw;
-  background-color: black;
-  color: white;
-  padding: 20px;
-}
+
 
 @media (max-width: 720px) {
   h1 {
@@ -158,38 +75,36 @@ footer {
     transform: translateX(-50%);
   }
 
-  footer {
-    display: flex;
-    width: 100%;
-  }
-
   .banner {
     background-attachment: scroll;
     background-position: center;
     height: 100%;
   }
 
-  main>p {
-    font-size: 1.4rem;
+
+  .itens_footer {
+    display: block;
+    text-align: center;
+  }
+
+  .logo-footer {
+    padding: 0;
+  }
+
+  #menu_mobile {
+    display: block;
+  }
+
+  .navbar-itens {
+    display: none;
+  }
+
+  #nav.active .navbar-itens {
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
   }
 }
-
-.itens_footer {
-  display: block;
-  text-align: center;
-}
-
-.logo-footer {
-  padding: 0;
-}
-#menu_mobile {
-  display: block; }
-.navbar-itens {
-  display: none; }
-#nav.active .navbar-itens {
-  position: absolute;
-  width: 100%;
-  top: 30px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px; }
