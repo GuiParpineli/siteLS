@@ -2,27 +2,32 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'PT Serif', serif; }
+  font-family: 'PT Serif', serif;
+}
 
 header {
   position: sticky;
   top: 0;
   background-color: black;
   color: white;
-  z-index: 99; }
+  z-index: 99;
+}
 
 .logo_header {
   background-color: black;
   padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .logo {
-  padding: 10px; }
+  padding: 10px;
+}
 
 nav {
-  background-color: #181818; }
+  background-color: #181818;
+}
 
 .navbar-itens {
   background-color: #181818;
@@ -30,67 +35,65 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  gap: 10px; }
+  gap: 10px;
+}
 
 #menu_mobile {
   border: 5px solid #181818;
   border-radius: 10px;
   background-color: #181818;
   padding: 5px;
-  display: none; }
+  display: none;
+}
 
 .menulist {
   padding: 10px;
   text-decoration: none;
-  list-style: none; }
+  list-style: none;
+}
 
-.menulist > a {
+.menulist>a {
   color: white;
   text-decoration: none;
   list-style: none;
-  transition: all 1s; }
+  transition: all 1s;
+}
 
 .menulist:hover {
-  transform: scale(1.2); }
+  transform: scale(1.2);
+}
 
-.menulist > a:hover {
-  color: #deb94f; }
+.menulist>a:hover {
+  color: #deb94f;
+}
 
-@media (max-width: 768px) {
-  #menu_mobile {
-    display: block; }
-  .navbar-itens {
-    display: none; }
-  #nav.active .navbar-itens {
-    position: absolute;
-    width: 100%;
-    top: 30px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px; } }
-
-footer {
-  position: relative;
-  width: 100vw;
-  background-color: black;
+main>p {
+  font-size: 1.4rem;
   color: white;
-  padding: 20px; }
+  text-align: center;
+  padding: 20px 100px;
+  text-shadow: 2px 2px 2px black;
+}
+
+h1 {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+}
 
 .logo-footer {
-  padding: 10px; }
+  padding: 10px;
+}
 
 .itens_footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 60px; }
+  gap: 60px;
+}
 
-@media (min-width: 300px) and (max-width: 980px) {
-  .itens_footer {
-    display: block;
-    text-align: center; }
-  .logo-footer {
-    padding: 0; } }
+
 
 .banner {
   background-image: url("../banner.jpg");
@@ -98,49 +101,53 @@ footer {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -99; }
+  z-index: -99;
+}
 
 .principal {
   color: white;
-  padding: 100px; }
+  padding: 100px;
+}
 
 .blogcontainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px; }
+  gap: 10px;
+}
 
 .title-blog {
   text-shadow: 2px 2px 2px black;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+}
 
 .blog {
   display: flex;
   height: 300px;
   border-radius: 10px;
   width: calc(33% - 10px);
-  background-color: white; }
+  background-color: white;
+}
 
-main > p {
-  font-size: 1.4rem;
+footer {
+  position: relative;
+  width: 100vw;
+  background-color: black;
   color: white;
-  text-align: center;
-  padding: 20px 100px;
-  text-shadow: 2px 2px 2px black; }
-
-h1 {
-  font-size: 2rem;
-  color: white;
-  text-align: center;
-  text-shadow: 2px 2px 2px black; }
+  padding: 20px;
+}
 
 @media (max-width: 720px) {
   h1 {
-    font-size: 3em; }
-  main > p {
-    font-size: 1.4em;
-    padding: 10px 50px; }
+    font-size: 3em;
+  }
+
+  main>p {
+    font-size: 1.2em;
+    padding: 10px 50px;
+  }
+
   .blog {
     width: 100%;
     min-height: 100px;
@@ -148,15 +155,41 @@ h1 {
     flex-direction: column;
     position: relative;
     left: 50%;
-    transform: translateX(-50%); }
+    transform: translateX(-50%);
+  }
+
   footer {
     display: flex;
-    width: 100%; } }
+    width: 100%;
+  }
 
-@media (min-width: 768px) and (max-width: 980px) {
   .banner {
     background-attachment: scroll;
     background-position: center;
-    height: 100%; }
-  main > p {
-    font-size: 1.8rem; } }
+    height: 100%;
+  }
+
+  main>p {
+    font-size: 1.4rem;
+  }
+}
+
+.itens_footer {
+  display: block;
+  text-align: center;
+}
+
+.logo-footer {
+  padding: 0;
+}
+#menu_mobile {
+  display: block; }
+.navbar-itens {
+  display: none; }
+#nav.active .navbar-itens {
+  position: absolute;
+  width: 100%;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px; }
